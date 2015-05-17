@@ -1,6 +1,16 @@
 machine:
+  environment:
+    LANG: en_US.UTF-8
   xcode:
     version: "6.3.1"
+  ruby:
+    version: ruby-2.2.1
+dependencies:
+  pre:
+    # - sudo gem install cocoapods --version 0.37.1
+    # - pod setup
+    # - pod install
+    - brew install xctool
 
 test:
   override:
