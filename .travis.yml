@@ -1,0 +1,7 @@
+language: objective-c
+
+pre-installed:
+  - brew update
+  - brew install xctool
+
+script: xctool -workspace test.xcworkspace -scheme test test -sdk iphonesimulator
